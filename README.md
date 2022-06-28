@@ -27,3 +27,5 @@ To activate, run:
 or
 
 <code>conda activate tf2</code>
+
+*NOTE:* Do not update the PyTorch environment using <code>conda env update -n pytorch --all </code>, as long as the Apple Silicon support is available only in nightly builds. Such an update would override the pytorch and torchvision with the versions from the stable channel. And that one, at the moment of writing, doesn't support the Apple Silicon accelerated training natively.
